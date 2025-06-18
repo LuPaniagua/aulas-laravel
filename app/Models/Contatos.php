@@ -9,7 +9,7 @@ class Contatos extends Model
 {
     use HasFactory;
 
-    protected $fiilable = [
+    protected $fillable = [
         "nome",
         "numero",
         "email",

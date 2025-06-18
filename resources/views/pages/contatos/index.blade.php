@@ -11,7 +11,7 @@
 <form action="" method="GET">
 <input type="text" name="pesquisar" placeholder="Digite para buscar" />
 <button>Pesquisar</button>
-<a type="button" href="" class="btn btn-success float-end">
+<a type="button" href="{{ route('contatos.create.get') }}" class="btn btn-success float-end">
     Incluir
 </a>
 </form>
@@ -23,10 +23,10 @@
 <table class="table table-striped table-sm">
     <thead>
         <tr>
-            <tr>Nome</th>
-            <tr>Número</th>
-            <tr>E-mail</th>
-            <tr>Ações</th>
+            <th>Nome</th>
+            <th>Número</th>
+            <th>E-mail</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
