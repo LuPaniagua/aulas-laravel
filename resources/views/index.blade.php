@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
-
+ 
 <head>
-    <!-- Referenciando o arquivo Javascript do Public -->
-    <script src="{{ asset("js/color-modes.js") }}"></script>
-
+ 
+    <!-- Referenciando o arqruivo javascript ao public -->
+    <script src="{{ asset('js/color-modes.js') }}"></script>
+ 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Astro v5.7.10">
     <title>Dashboard Template · Bootstrap v5.3</title>
+ 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    
-    <link href="{{ asset("css/bootstrap.min.css") }}" rel="stylesheet"
+ 
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT">
-
-        <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ asset("icons/apple-touch-icon.png") }}" sizes="180x180">
-    <link rel="icon" href="{{ asset("icons/favicon-32x32.png") }}" sizes="32x32" type="image/png">
+ 
+    <!--  Favicons -->
+    <link rel="apple-touch-icon" href="{{ asset('icons/apple-touch-icon.png') }}" sizes="180x180">
+    <link rel="icon" href="{{ asset('icons/favicon-32x32.png') }}" sizes="32x32" type="image/png">
     <link rel="icon" href="{{ asset('icons/favicon-16x16.png') }}" sizes="16x16" type="image/png">
     <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="{{ asset("icons/safari-pinned-tab.svg") }}" color="#712cf9">
-    <link rel="icon" href="{{ asset("icons/favicon.ico") }}">
+    <link rel="mask-icon" href="{{ asset('icons/safari-pinned-tab.svg') }}" color="#712cf9">
+    <link rel="icon" href="{{ asset('icons/favicon.ico') }}">
     <meta name="theme-color" content="#712cf9">
-    
-    <!-- Customizando estilo do template-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
-
-     <!-- CONTINUAR -->
-    <link href="{{ asset("css/dashboard.css") }}" rel="stylesheet">
-
-
-    <link href="dashboard.css" rel="stylesheet">
+ 
+    <!-- Customizando o estilo do template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+ 
+    <!-- CONTINUA... -->
+ 
+    <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
+ 
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -41,13 +42,13 @@
             -moz-user-select: none;
             user-select: none
         }
-
+ 
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem
             }
         }
-
+ 
         .b-example-divider {
             width: 100%;
             height: 3rem;
@@ -56,25 +57,25 @@
             border-width: 1px 0;
             box-shadow: inset 0 .5em 1.5em #0000001a, inset 0 .125em .5em #00000026
         }
-
+ 
         .b-example-vr {
             flex-shrink: 0;
             width: 1.5rem;
             height: 100vh
         }
-
+ 
         .bi {
             vertical-align: -.125em;
             fill: currentColor
         }
-
+ 
         .nav-scroller {
             position: relative;
             z-index: 2;
             height: 2.75rem;
             overflow-y: hidden
         }
-
+ 
         .nav-scroller .nav {
             display: flex;
             flex-wrap: nowrap;
@@ -85,7 +86,7 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch
         }
-
+ 
         .btn-bd-primary {
             --bd-violet-bg: #712cf9;
             --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
@@ -101,22 +102,22 @@
             --bs-btn-active-bg: #5a23c8;
             --bs-btn-active-border-color: #5a23c8
         }
-
+ 
         .bd-mode-toggle {
             z-index: 1500
         }
-
+ 
         .bd-mode-toggle .bi {
             width: 1em;
             height: 1em
         }
-
+ 
         .bd-mode-toggle .dropdown-menu .active .bi {
             display: block !important
         }
     </style>
 </head>
-
+ 
 <body> <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
             <path
@@ -140,7 +141,8 @@
             </path>
         </symbol>
     </svg>
-     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+ 
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="calendar3" viewBox="0 0 16 16">
             <path
                 d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z">
@@ -221,7 +223,7 @@
         </symbol>
     </svg>
     <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark"> <a
-            class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Satoru Gojo</a>
+            class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">CRUD</a>
         <ul class="navbar-nav flex-row d-md-none">
             <li class="nav-item text-nowrap"> <button class="nav-link px-3 text-white" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch"
@@ -241,20 +243,39 @@
     <div class="container-fluid">
         <div class="row">
             @include("components.navegacao")
-                </div>
-            </div>
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                @yield("content")
-            </main>
         </div>
     </div>
-    <script src="{{ asset("js/bootstrap.bundle.min.js") }}"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        class="astro-vvvwv3sm"></script>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        @yield("content")
+    </main>
+    </div>
+    </div>
+ 
+ 
+ 
+ 
+ 
+ 
+    <!-- Biblioteca jquery para alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+ 
+    <!-- Biblioteca Jquery para testar máscara de telefone -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+    <!-- Acesso ao arquivo do projeto no public -->
+    <script src="{{ asset("js/projeto.js")}}"></script>
+ 
+    <script src="{{asset("js/bootstrap.bundle.min.js") }}"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" class="astro-vvvwv3sm">
+        </script>
+ 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js"
         integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"
-        class="astro-vvvwv3sm"></script>
-    <script src="{{ asset('js/dashboard.js') }}" class="astro-vvvwv3sm"></script>
+        class="astro-vvvwv3sm">
+        </script>
+ 
+    <script src="{{asset('js/dashboard.js')}}" class="astro-vvvwv3sm"></script>
 </body>
-
+ 
 </html>
